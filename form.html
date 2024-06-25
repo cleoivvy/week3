@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>create an account</h2>
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                    <label for="fullname">fullname</label>
+                    <input type="text" name="name" id="fullname" required>
+                </li>
+                <li>
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="dateOfBirth">date of birth</label>
+                    <input type="date" name="date" id="dateOfBirth">
+                </li>
+                <li>
+                    <label for="tellnumber">phone number</label>
+                    <input type="tel" name="phone-number" id="tellnumber">
+                </li>
+                <li>
+                    <h3>gender</h3>
+                    <label for="male">male</label>
+                    <input type="radio" name="male" id="male">
+                    <label for="female">female</label>
+                    <input type="radio" name="female" id="female" checked>
+                </li>
+                <li>
+                    <h3>marital status</h3>
+                    <label for="married">married</label>
+                    <input type="radio" name="marital status" id="married">
+                    <label for="single">single</label>
+                    <input type="radio" name="marital status" id="single">
+                    <br>
+                    <label for="divorced">divorced</label>
+                    <input type="radio" name="marital status" id="divorced">
+                    <label for="widowed">widowed</label>
+                    <input type="radio" name="marital status" id="widowed">
+                </li>
+                <li>
+                    <h3>state of origin</h3>
+                    <select>
+                        <optgroup label="northern">
+                            <option value="kd">kaduna</option>
+                            <option value="kb">kebbi</option>
+                            <option value="js">jos</option>
+                            <optgroup label="eastern">
+                                <option value="an">anambra</option>
+                                <option value="en">enugu</option>
+                                <option value="im">imo</option>
+                        </optgroup>
+                    </select>
+                    <fieldset>
+                       <legend>educational qualification</legend> 
+                        <ul>
+                            <li>
+                                <h3>qualifications obtained</h3>
+                                <input type="checkbox" name="edu" id="sec">
+                                <label for="sec">ssce</label>
+                                <input type="checkbox" name="edu" id="bsc">
+                                <label for="bsc">bachelors degree</label> 
+                                <br>
+                                <input type="checkbox" name="edu" id="msc">
+                                <label for="msc">masters degree</label>
+                                <input type="checkbox" name="edu" id="phd">
+                                <label for="phd">doctorate degree</label>
+                            </li>
+                        </ul>
+                </fieldset>
+                    <li>
+                        <label for="resume">upload your resume</label>
+                        <input type="file" name="file" id="resume" accept=".pdf">
+                    </li>
+                    <li>
+                        <label for="exp">years of experience</label>
+                        <input type="number" name="number" id="exp" min="2" max="7">
+                    </li>
+                    <input type="checkbox" name="checkbox" id="accept" required>
+                    <label for="">accept our <a href="#">terms and conditions</a>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
